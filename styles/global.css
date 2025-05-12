@@ -1,10 +1,95 @@
-/* remove default browser spacing*/
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/*title text style*/
-/* the font-family 'JetBrains Mono', has been linked
- * and is available for your use
- * */
+body {
+  background-color: #808080;
+}
+#container {
+  background-color: #fff;
+  padding: 60px;
+  width: 800px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrapper {
+  display: flex;
+}
+.img {
+  width: 300px;
+  height: 350px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.greeting {
+  margin-bottom: 30px;
+  margin-top: 8rem;
+}
+.links {
+  position: absolute;
+  top: 4%;
+  right: 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+li {
+  font-size: small;
+}
+a:hover {
+  border-bottom: 2px goldenrod solid;
+  cursor: pointer;
+  transition: all;
+}
+.course {
+  color: yellowgreen;
+}
+.link {
+  color: orange;
+}
+.Note {
+  font-size: 20px;
+  background: #35424a;
+  color: #fff;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+@media (max-width: 376px) {
+  #wrapper {
+    display: flex;
+  }
+  #container {
+    background-color: #fff;
+    padding: 80px;
+    width: 600px;
+    margin: auto;
+  }
+  .img {
+    width: 250px;
+    height: 300px;
+    border-radius: 3px;
+    margin-right: 20px;
+  }
+  .greeting {
+    margin-bottom: 20px;
+    margin-top: 6rem;
+  }
+  .info {
+    font-size: 15px;
+  }
+}
